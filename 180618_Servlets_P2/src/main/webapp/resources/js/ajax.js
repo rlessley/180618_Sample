@@ -12,7 +12,7 @@ function getNpcs(){
 	xhr.onreadystatechange = function(){
 		if(xhr.readyState==4){
 			//Converts a JSON string into a JSON object.
-			console.log(JSON.parse(xhr.response));
+			console.log(xhr.response);
 			let data = JSON.parse(xhr.response);
 			
 			//To convert to a JSON string, for java use, we use:
